@@ -50,8 +50,8 @@ p {
 .header {
   height: calc(100vh - 50px);
   margin-top: 50px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("https://github.com/MacRapacki/Landing-Page/blob/master/img/turntable-1337986_1920.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://github.com/MacRapacki/Landing-Page/blob/master/img/turntable-1337986_1920.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(./img/turntable-1337986_1920.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/turntable-1337986_1920.jpg);
   background-attachment: fixed;
   background-size: 300%;
 }
@@ -486,8 +486,8 @@ p {
 }
 
 .services .services__wrapper .services__numbers {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("https://github.com/MacRapacki/Landing-Page/blob/master/img/japan-217878_1920.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://github.com/MacRapacki/Landing-Page/blob/master/img/japan-217878_1920.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(./img/japan-217878_1920.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./img/japan-217878_1920.jpg);
   background-attachment: fixed;
   background-size: 300%;
   display: -webkit-box;
