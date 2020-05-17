@@ -1,13 +1,25 @@
 .team {
     .team__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @include breakpoint(small) {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
         .team__person {
             background-color: $section-bgc;
             margin: 40px 15px;
             padding: 30px 0;
+            width: 350px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+
 
             .team__person__face {
                 position: relative;
@@ -15,6 +27,7 @@
                 height: 250px;
                 margin: 20px 0;
                 overflow: hidden;
+
 
                 .team__person__img {
                     position: absolute;
@@ -26,6 +39,11 @@
 
                 }
             }
+
+            .team__person__role {
+                margin: 15px 0;
+            }
+
         }
     }
 }

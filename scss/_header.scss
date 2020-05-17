@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Varela Round', 'Montserrat', sans-serif;
+    scroll-behavior: smooth
 }
 
 h1,
@@ -18,6 +19,7 @@ p {
 }
 
 .tittle__h2 {
+    width: 100%;
     position: relative;
     font-size: 31px;
     font-family: 'Montserrat', sans-serif;
@@ -51,7 +53,7 @@ p {
     margin-top: 50px;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/turntable-1337986_1920.jpg);
     background-attachment: fixed;
-    background-size: 300%;
+    background-size: 380%;
 
     .wrapper {
         height: 100%;
@@ -95,6 +97,10 @@ p {
                 justify-content: center;
                 align-items: center;
                 cursor: pointer;
+
+                @include breakpoint(small) {
+                    display: none;
+                }
 
                 .bar {
                     width: 30px;
@@ -140,6 +146,17 @@ p {
                     transform: translateX(0%);
                 }
 
+                @include breakpoint(small) {
+                    position: relative;
+                    flex-direction: row;
+                    transform: translateX(0);
+                    background-color: transparent;
+                    height: 100%;
+                    width: 80%;
+                    margin: 0;
+
+                }
+
                 .navbar__item {
                     border-bottom: 1px solid rgba(250, 250, 250, 0.2);
                     width: 100%;
@@ -160,6 +177,11 @@ p {
 
                         &--active {
                             opacity: 1;
+                        }
+
+                        @include breakpoint(small) {
+                            opacity: 1;
+                            color: black;
                         }
                     }
                 }
@@ -183,6 +205,10 @@ p {
                 font-size: 36px;
                 margin-bottom: 40px;
                 text-transform: uppercase;
+
+                @include breakpoint(small) {
+                    font-size: 54px;
+                }
             }
 
             .header__text {
@@ -207,6 +233,12 @@ p {
                     margin: 0 20px;
                     border: none;
                     border-radius: 5px;
+                    background-color: white;
+
+                    @include breakpoint(small) {
+                        width: 160px;
+                        height: 55px;
+                    }
 
                     &.header__btn--blue {
                         background-color: royalblue;

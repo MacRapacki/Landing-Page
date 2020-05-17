@@ -5,6 +5,12 @@
         justify-content: center;
         align-items: center;
 
+        @include breakpoint(small) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
         .contact__info {
             display: flex;
             flex-direction: column;
@@ -39,10 +45,11 @@
                 padding: 6px 0;
                 margin: 10px 0;
                 opacity: 0.7;
+                max-width: 450px;
             }
 
             .contact__message {
-                max-width: 100%;
+                max-width: 450px;
             }
 
             .contact__btn {

@@ -13,18 +13,18 @@
 </head>
 
 <body>
-    <header class="header">
+    <header id="home" class="header">
         <div class="wrapper ">
             <nav class="navbar">
                 <a class="navbar__logo" href="#">logo</a>
                 <ul class="navbar__list">
-                    <li class="navbar__item"><a class="navbar__link" href="#">Home</a></li>
-                    <li class="navbar__item"><a class="navbar__link" href="#">About</a></li>
-                    <li class="navbar__item"><a class="navbar__link" href="#">Portfolio</a></li>
-                    <li class="navbar__item"><a class="navbar__link" href="#">Services</a></li>
-                    <li class="navbar__item"><a class="navbar__link" href="#">Prices</a></li>
-                    <li class="navbar__item"><a class="navbar__link" href="#">Team</a></li>
-                    <li class="navbar__item"><a class="navbar__link" href="#">Contact</a></li>
+                    <li class="navbar__item"><a class="navbar__link" href="#home">Home</a></li>
+                    <li class="navbar__item"><a class="navbar__link" href="#about">About</a></li>
+                    <li class="navbar__item"><a class="navbar__link" href="#portfolio">Portfolio</a></li>
+                    <li class="navbar__item"><a class="navbar__link" href="#services">Services</a></li>
+                    <li class="navbar__item"><a class="navbar__link" href="#prices">Prices</a></li>
+                    <li class="navbar__item"><a class="navbar__link" href="#team">Team</a></li>
+                    <li class="navbar__item"><a class="navbar__link" href="#contact">Contact</a></li>
                 </ul>
                 <div class="header__burger">
                     <div class="bar bar__top"></div>
@@ -48,7 +48,7 @@
     </header>
 
     <main class="main">
-        <section class="section about">
+        <section id="about" class="section about">
             <div class="wrapper aobut__wrapper">
                 <h2 class="tittle__h2 about__title">Welcome To Website</h2>
 
@@ -78,9 +78,9 @@
             </div>
         </section>
 
-        <section class="section portfolio">
+        <section id="portfolio" class="section portfolio">
             <div class="wrapper portfolio__wrapper">
-                <h2 class="tittle__h2">Featured Works</h2>
+                <h2 class="tittle__h2 portfolio__tittle">Featured Works</h2>
 
                 <div class="wrapper__portfolio__overlay">
                     <img src="img/portfolio/apple-1868496_1920.jpg" alt="" class="portfolio__img">
@@ -148,15 +148,15 @@
                         <span class="span__portfolio">Category</span>
                         <h3 class="tittle__h3">lorem ipsum dolor</h3>
                         <div class="portfolio__link">
-                            <a href=""><i class="fas fa-external-link-alt"></i></a>
-                            <a href=""><i class="fas fa-search-plus"></i></i></a>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#"><i class="fas fa-search-plus"></i></i></a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section services">
+        <section id="services" class="section services">
             <div class="wrapper services__wrapper">
                 <h2 class="tittle__h2 services__title">What We Offer</h2>
 
@@ -243,7 +243,7 @@
             </div>
         </section>
 
-        <section class="section prices">
+        <section id="prices" class="section prices">
             <div class="wrapper prices__wrapper">
                 <h2 class="tittle__h2">Pricing Table</h2>
                 <div class="prices__box">
@@ -278,26 +278,26 @@
                 </div>
         </section>
 
-        <section class="section team">
+        <section id="team" class="section team">
             <div class="wrapper team__wrapper">
                 <h2 class="tittle__h2">Our Team</h2>
                 <div class="team__person">
                     <div class="team__person__face">
-                        <img class="team__person__img" src="img/team/author-1322627_1920.jpg" alt="">
+                        <img class="team__person__img" src="img/team/author-1322627_1920.jpg" alt="Teammate">
                     </div>
                     <h3 class="tittle__h3 team__person__name">Alan Smith</h3>
                     <span class="team__person__role">Web Designer</span>
                 </div>
                 <div class="team__person">
                     <div class="team__person__face">
-                        <img class="team__person__img" src="img/team/business-woman-2697954_1920.jpg" alt="">
+                        <img class="team__person__img" src="img/team/business-woman-2697954_1920.jpg" alt="Teammate">
                     </div>
                     <h3 class="tittle__h3 team__person__name">Elena Wood</h3>
                     <span class="team__person__role">Web Designer</span>
                 </div>
                 <div class="team__person">
                     <div class="team__person__face">
-                        <img class="team__person__img" src="img/team/model-2911332_1920.jpg" alt="">
+                        <img class="team__person__img" src="img/team/model-2911332_1920.jpg" alt="Teammate">
                     </div>
                     <h3 class="tittle__h3 team__person__name">Chris Jones</h3>
                     <span class="team__person__role">Web Designer</span>
@@ -306,7 +306,7 @@
             </div>
         </section>
 
-        <section class="section contact">
+        <section id="contact" class="section contact">
             <div class="wrapper contact__wrapper">
                 <h2 class="tittle__h2">Get In Touch</h2>
                 <div class="contact__info">
@@ -341,14 +341,13 @@
 
     <footer class="footer">
         <div class="footer__wrapper">
-            <a href="" class="logo">LOGO</a>
+            <a href="#" class="logo">LOGO</a>
             <div class="footer__social">
-                <a href=""><i class="fab fa-facebook-f"></i></a>
-                <a href=""><i class="fab fa-twitter"></i></a>
-                <a href=""><i class="fab fa-google-plus-g"></i></a>
-                <a href=""><i class="fab fa-instagram"></i></a>
-                <a href=""><i class="fab fa-linkedin-in"></i></a>
-                <a href=""><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
             </div>
             <p class="footer__copyright">Copyright © 2017. All Rights Reserved.</p>
         </div>
