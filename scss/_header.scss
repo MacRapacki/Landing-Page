@@ -6,15 +6,50 @@
 }
 
 h1,
-h1,
+h2,
 h3 {
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+    text-align: center;
+}
+
+.tittle__h2 {
+    position: relative;
+    font-size: 31px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+
+    &::after {
+        position: absolute;
+        content: "";
+        width: 80px;
+        height: 3px;
+        left: 50%;
+        bottom: -50%;
+        transform: translateX(-50%);
+        background-color: $blue-color;
+    }
+}
+
+.tittle__h3 {
+    font-size: 21px;
+
+}
+
+.wrapper {
+    height: 100%;
+    width: 100%;
+    padding: 25px 15px;
 }
 
 .header {
     height: calc(100vh - 50px);
     margin-top: 50px;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/img/turntable-1337986_1920.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/turntable-1337986_1920.jpg);
     background-attachment: fixed;
     background-size: 300%;
 
@@ -35,6 +70,7 @@ h3 {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            z-index: 11;
 
             .navbar__logo {
                 width: 100px;
@@ -63,11 +99,19 @@ h3 {
                     height: 4px;
                     background-color: black;
                     margin: 3px;
+                    transition: 0.2s linear;
                 }
 
-                .bar--active .bar__top {
-                    // opacity: 0;
-                    background-color: brown;
+                .bar--active.bar__top {
+                    transform: translateY(10px) rotate(45deg);
+                }
+
+                .bar--active.bar__middle {
+                    opacity: 0;
+                }
+
+                .bar--active.bar__bottom {
+                    transform: translateY(-10px) rotate(-45deg);
                 }
 
 
@@ -88,7 +132,7 @@ h3 {
                 list-style: none;
                 background-color: black;
                 transform: translateX(100%);
-                transition: all 0.5s ease-in;
+                transition: all 0.3s ease-in;
 
                 &--active {
                     transform: translateX(0%);
@@ -110,7 +154,7 @@ h3 {
                         text-decoration: none;
                         color: white;
                         opacity: 0;
-                        transition: all 1.6s ease-in;
+                        transition: all 0.4s ease-in 0.4s;
 
                         &--active {
                             opacity: 1;

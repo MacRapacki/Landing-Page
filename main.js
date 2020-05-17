@@ -1,3 +1,5 @@
+// HEADER SECTION
+
 const burger = document.querySelector(".header__burger")
 const navbar = document.querySelector(".navbar__list")
 const links = document.querySelectorAll(".navbar__link")
