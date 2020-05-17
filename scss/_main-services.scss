@@ -1,6 +1,10 @@
 .services {
     .services__wrapper {
 
+        .tittle__h2 {
+            padding-top: 30px;
+        }
+
         .services__box {
             margin: 40px 0;
             padding: 20px 0;
@@ -19,6 +23,62 @@
                     font-size: 35px;
                 }
             }
+        }
+
+        .services__why {
+            background-color: $section-bgc;
+            padding: 0 15px;
+
+            .why__text {
+                margin: 40px 0
+            }
+
+            .why_check {
+                text-align: start;
+                margin: 15px 0;
+
+                .fas {
+                    color: $blue-color;
+                    font-size: 20px;
+                    margin-right: 8px;
+                }
+            }
+        }
+
+        .services__numbers {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/img/japan-217878_1920.jpg);
+            background-attachment: fixed;
+            background-size: 300%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .services__number {
+                color: white;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 25px;
+
+                .fas {
+                    font-size: 55px;
+                    color: $blue-color;
+                }
+
+                .counter {
+                    font-size: 36px;
+                    margin: 15px 0;
+                    font-family: $font;
+                    font-weight: bold;
+                }
+
+                .text {
+                    font-size: 16px;
+                }
+            }
+
         }
     }
 }

@@ -204,7 +204,8 @@
 
                 <div class="services__why">
                     <h2 class="tittle__h2">Why Choose Us</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus perferendis repellat
+                    <p class="why__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus perferendis
+                        repellat
                         consequatur quidem cum reiciendis doloribus odit maxime ipsam, natus nihil laborum unde, error
                         odio nostrum quaerat consectetur dolor laboriosam.</p>
                     <p class="why_check"><i class="fas fa-check"></i>Quis varius quam quisque id diam vel quam
@@ -218,22 +219,22 @@
                 <div class="services__numbers">
                     <div class="services__number">
                         <i class="fas fa-users"></i>
-                        <span class="counter"></span>
+                        <span class="counter">652</span>
                         <span class="text">Happy clients</span>
                     </div>
                     <div class="services__number">
                         <i class="fas fa-trophy"></i>
-                        <span class="counter"></span>
+                        <span class="counter">9</span>
                         <span class="text">Awards won</span>
                     </div>
                     <div class="services__number">
                         <i class="fas fa-mug-hot"></i>
-                        <span class="counter"></span>
+                        <span class="counter">148K</span>
                         <span class="text">Cups of Coffe</span>
                     </div>
                     <div class="services__number">
                         <i class="fas fa-paste"></i>
-                        <span class="counter"></span>
+                        <span class="counter">39</span>
                         <span class="text">Projects completed</span>
                     </div>
                 </div>
@@ -247,7 +248,8 @@
                 <h2 class="tittle__h2">Pricing Table</h2>
                 <div class="prices__box">
                     <span class="prices__box__plan">Basic plan</span>
-                    <div class="prices__box__price">
+                    <div class="prices__box__price"><span>£16 </span>/month</div>
+                    <div class="prices__box__get">
                         <p>1GB Disk Space</p>
                         <p>100 Email Account</p>
                         <p>24/24 Support</p>
@@ -256,7 +258,8 @@
                 </div>
                 <div class="prices__box">
                     <span class="prices__box__plan">silver plan</span>
-                    <div class="prices__box__price">
+                    <div class="prices__box__price"><span>£16 </span>/month</div>
+                    <div class="prices__box__get">
                         <p>1GB Disk Space</p>
                         <p>100 Email Account</p>
                         <p>24/24 Support</p>
@@ -265,7 +268,8 @@
                 </div>
                 <div class="prices__box">
                     <span class="prices__box__plan">gold plan</span>
-                    <div class="prices__box__price">
+                    <div class="prices__box__price"><span>£16 </span>/month</div>
+                    <div class="prices__box__get">
                         <p>1GB Disk Space</p>
                         <p>100 Email Account</p>
                         <p>24/24 Support</p>
@@ -278,18 +282,24 @@
             <div class="wrapper team__wrapper">
                 <h2 class="tittle__h2">Our Team</h2>
                 <div class="team__person">
-                    <img class="team__person__face" src="" alt="">
-                    <h3 class="tittle__h3 team__person__name">Alan White</h3>
+                    <div class="team__person__face">
+                        <img class="team__person__img" src="/img/team/author-1322627_1920.jpg" alt="">
+                    </div>
+                    <h3 class="tittle__h3 team__person__name">Alan Smith</h3>
                     <span class="team__person__role">Web Designer</span>
                 </div>
                 <div class="team__person">
-                    <img class="team__person__face" src="" alt="">
-                    <h3 class="tittle__h3 team__person__name">Alan White</h3>
+                    <div class="team__person__face">
+                        <img class="team__person__img" src="/img/team/business-woman-2697954_1920.jpg" alt="">
+                    </div>
+                    <h3 class="tittle__h3 team__person__name">Elena Wood</h3>
                     <span class="team__person__role">Web Designer</span>
                 </div>
                 <div class="team__person">
-                    <img class="team__person__face" src="" alt="">
-                    <h3 class="tittle__h3 team__person__name">Alan White</h3>
+                    <div class="team__person__face">
+                        <img class="team__person__img" src="/img/team/model-2911332_1920.jpg" alt="">
+                    </div>
+                    <h3 class="tittle__h3 team__person__name">Chris Jones</h3>
                     <span class="team__person__role">Web Designer</span>
                 </div>
 
@@ -301,26 +311,27 @@
                 <h2 class="tittle__h2">Get In Touch</h2>
                 <div class="contact__info">
                     <i class="fas fa-phone"></i>
-                    <h3 class="tittle__h3"></h3>
-                    <p>Phone</p>
+                    <h3 class="tittle__h3">Phone</h3>
+                    <p class="contact__detail">546-985-9855</p>
                 </div>
                 <div class="contact__info">
                     <i class="fas fa-envelope"></i>
-                    <h3 class="tittle__h3"></h3>
-                    <p>Email</p>
+                    <h3 class="tittle__h3">Email</h3>
+                    <p class="contact__detail">email@support.com</p>
                 </div>
 
                 <div class="contact__info">
                     <i class="fas fa-map-marker-alt"></i>
-                    <h3 class="tittle__h3"></h3>
-                    <p>Address</p>
+                    <h3 class="tittle__h3">Address</h3>
+                    <p class="contact__detail">1945 Main Road</p>
                 </div>
-                <form class="form">
-                    <input type="text">
-                    <input type="text">
-                    <input type="text">
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                    <button class="contact__btn"></button>
+                <form class="contact__form">
+                    <input type="text" class="input contact__name" placeholder="Name">
+                    <input type="email" class="input conatct__email" placeholder="Email">
+                    <input type="text" class="input contact__subject" placeholder="Subject">
+                    <textarea class="input contact__message" placeholder="Message" name="" cols="30"
+                        rows="10"></textarea>
+                    <button class="contact__btn">Send message</button>
                 </form>
 
             </div>
@@ -339,7 +350,7 @@
                 <a href=""><i class="fab fa-linkedin-in"></i></a>
                 <a href=""><i class="fab fa-youtube"></i></a>
             </div>
-            <p>Copyright © 2017. All Rights Reserved.</p>
+            <p class="footer__copyright">Copyright © 2017. All Rights Reserved.</p>
         </div>
     </footer>
 

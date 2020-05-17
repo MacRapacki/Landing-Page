@@ -1,0 +1,31 @@
+.team {
+    .team__wrapper {
+        .team__person {
+            background-color: $section-bgc;
+            margin: 40px 15px;
+            padding: 30px 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .team__person__face {
+                position: relative;
+                width: 250px;
+                height: 250px;
+                margin: 20px 0;
+                overflow: hidden;
+
+                .team__person__img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 350px;
+                    height: auto;
+                    transform: translateX(-50px);
+
+                }
+            }
+        }
+    }
+}
