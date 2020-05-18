@@ -1,10 +1,7 @@
 .prices {
 
     .prices__wrapper {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flex-center;
 
         @include breakpoint(small) {
             flex-direction: row;
@@ -16,12 +13,21 @@
         .prices__box {
             border: 1px solid rgb(204, 204, 204);
             margin: 40px 15px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            @include flex-center;
             transition: 0.2s linear;
-            max-width: 250px;
+            width: 80%;
+
+            @include breakpoint(small) {
+                max-width: 250px;
+            }
+
+            @include breakpoint(medium) {
+                margin: 40px 30px;
+            }
+
+            @include breakpoint(large) {
+                margin: 40px 50px;
+            }
 
             &:hover {
                 background-color: black;
@@ -40,10 +46,7 @@
                 height: 100px;
                 border: 2px solid $blue-color;
                 border-radius: 50%;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
+                @include flex-center;
                 text-align: center;
                 font-weight: bold;
 
@@ -55,10 +58,7 @@
             }
 
             .prices__box__get {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
+                @include flex-center;
 
                 p {
                     margin: 15px 0;

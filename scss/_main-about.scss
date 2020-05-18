@@ -2,12 +2,14 @@
     width: 100%;
 
     .aobut__wrapper {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flex-center;
         padding: 50px 15px;
         font-size: 32px;
+
+        @include breakpoint (small) {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
 
         // .about__tittle {
         //     // display: block;
@@ -16,13 +18,37 @@
         // }
 
         .about__box {
+            position: relative;
             width: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            @include flex-center;
             margin-top: 40px;
             border: 1px solid rgb(204, 204, 204);
+            transition: 0.2s ease-in;
+
+            &::before {
+                position: absolute;
+                content: "";
+                width: 100%;
+                height: 0;
+                right: 0;
+                top: 0;
+                background-color: black;
+                z-index: -1;
+                transition: 0.2s ease-in;
+            }
+
+            &:hover {
+                color: white;
+            }
+
+            &:hover::before {
+                height: 100%;
+            }
+
+            @include breakpoint (small) {
+                max-width: 300px;
+                margin: 40px 20px;
+            }
 
             .fas {
                 color: $blue-color;

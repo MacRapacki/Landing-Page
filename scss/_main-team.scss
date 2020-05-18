@@ -1,9 +1,6 @@
 .team {
     .team__wrapper {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flex-center;
 
         @include breakpoint(small) {
             flex-direction: row;
@@ -15,10 +12,7 @@
             margin: 40px 15px;
             padding: 30px 0;
             width: 350px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            @include flex-center;
 
 
             .team__person__face {

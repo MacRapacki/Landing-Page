@@ -9,6 +9,7 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600&family=Varela+Round&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="scss/style.css">
+    <link href="lightbox/lightbox.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/cb9cf5c4e5.js" crossorigin="anonymous"></script>
 </head>
 
@@ -89,7 +90,8 @@
                         <h3 class="tittle__h3">lorem ipsum dolor</h3>
                         <div class="portfolio__link">
                             <a href="#"><i class="fas fa-external-link-alt"></i></a>
-                            <a href="#"><i class="fas fa-search-plus"></i></i></a>
+                            <a href="img/portfolio/apple-1868496_1920.jpg" data-lightbox="image-1"><i
+                                    class="fas fa-search-plus"></i></i></a>
                         </div>
                     </div>
                 </div>
@@ -101,7 +103,8 @@
                         <h3 class="tittle__h3">lorem ipsum dolor</h3>
                         <div class="portfolio__link">
                             <a href="#"><i class="fas fa-external-link-alt"></i></a>
-                            <a href="#"><i class="fas fa-search-plus"></i></i></a>
+                            <a href="img/portfolio/herbs-906140_1920.jpg" data-lightbox="image-2"><i
+                                    class="fas fa-search-plus"></i></i></a>
                         </div>
                     </div>
                 </div>
@@ -113,7 +116,8 @@
                         <h3 class="tittle__h3">lorem ipsum dolor</h3>
                         <div class="portfolio__link">
                             <a href="#"><i class="fas fa-external-link-alt"></i></a>
-                            <a href="#"><i class="fas fa-search-plus"></i></i></a>
+                            <a href="img/portfolio/living-room-2155376_1920.jpg" data-lightbox="image-3"><i
+                                    class="fas fa-search-plus"></i></i></a>
                         </div>
                     </div>
                 </div>
@@ -125,7 +129,8 @@
                         <h3 class="tittle__h3">lorem ipsum dolor</h3>
                         <div class="portfolio__link">
                             <a href="#"><i class="fas fa-external-link-alt"></i></a>
-                            <a href="#"><i class="fas fa-search-plus"></i></i></a>
+                            <a href="img/portfolio/technology-792180_1920.jpg" data-lightbox="image-4"><i
+                                    class="fas fa-search-plus"></i></i></a>
                         </div>
                     </div>
                 </div>
@@ -137,7 +142,8 @@
                         <h3 class="tittle__h3">lorem ipsum dolor</h3>
                         <div class="portfolio__link">
                             <a href="#"><i class="fas fa-external-link-alt"></i></a>
-                            <a href="#"><i class="fas fa-search-plus"></i></i></a>
+                            <a href="img/portfolio/typewriter-1248088_1920.jpg" data-lightbox="image-5"><i
+                                    class="fas fa-search-plus"></i></i></a>
                         </div>
                     </div>
                 </div>
@@ -149,7 +155,8 @@
                         <h3 class="tittle__h3">lorem ipsum dolor</h3>
                         <div class="portfolio__link">
                             <a href="#"><i class="fas fa-external-link-alt"></i></a>
-                            <a href="#"><i class="fas fa-search-plus"></i></i></a>
+                            <a href="img/portfolio/wedding-dresses-1486005_1920.jpg" data-lightbox="image-6"><i
+                                    class="fas fa-search-plus"></i></i></a>
                         </div>
                     </div>
                 </div>
@@ -214,7 +221,7 @@
                     <p class="why_check"><i class="fas fa-check"></i>Orci phasellus egestas tellus rutrum.</p>
                     <p class="why_check"><i class="fas fa-check"></i>Nec feugiat nisl pretium fusce id velit ut tortor
                         pretium.</p>
-                    <img class="why__slider" src="" alt="">
+                    <!-- <img class="why__slider" src="" alt=""> -->
                 </div>
                 <div class="services__numbers">
                     <div class="services__number">
@@ -326,9 +333,9 @@
                     <p class="contact__detail">1945 Main Road</p>
                 </div>
                 <form class="contact__form">
-                    <input type="text" class="input contact__name" placeholder="Name">
-                    <input type="email" class="input conatct__email" placeholder="Email">
-                    <input type="text" class="input contact__subject" placeholder="Subject">
+                    <input type="text" class="input contact__name" placeholder="Name" maxlength="40">
+                    <input type="email" class="input conatct__email" placeholder="Email" maxlength="40">
+                    <input type="text" class="input contact__subject" placeholder="Subject" maxlength="50">
                     <textarea class="input contact__message" placeholder="Message" name="" cols="30"
                         rows="10"></textarea>
                     <button class="contact__btn">Send message</button>
@@ -349,10 +356,11 @@
                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
                 <a href="#"><i class="fab fa-youtube"></i></a>
             </div>
-            <p class="footer__copyright">Copyright © 2017. All Rights Reserved.</p>
+            <p class="footer__copyright">Copyright © 2020. All Rights Reserved.</p>
         </div>
     </footer>
 
+    <script src="lightbox/lightbox-plus-jquery.js"></script>
     <script src="main.js"></script>
 </body>
 

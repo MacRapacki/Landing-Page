@@ -2,3 +2,10 @@ $blue-color: #6195FF;
 $section-bgc: rgb(241, 241, 241);
 $font: 'Montserrat',
 sans-serif;
+
+@mixin flex-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

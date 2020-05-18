@@ -1,4 +1,4 @@
-// HEADER SECTION
+// HEADER SECTION //
 
 const burger = document.querySelector(".header__burger")
 const navbar = document.querySelector(".navbar__list")
@@ -20,4 +20,13 @@ burger.addEventListener('click', () => {
     bars.forEach((bar) => {
         bar.classList.toggle("bar--active")
     })
+})
+
+
+// CONTACT SECTION //  
+
+const submitFormBtn = document.querySelector(".contact__btn")
+
+submitFormBtn.addEventListener('click', (e) => {
+    e.preventDefault();
 })
