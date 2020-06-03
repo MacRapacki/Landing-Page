@@ -149,6 +149,7 @@ p {
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
+  padding: 5px 15px;
 }
 
 @media screen and (min-width: 768px) {
@@ -363,6 +364,9 @@ p {
   border: none;
   border-radius: 5px;
   background-color: white;
+  cursor: pointer;
+  -webkit-transition: opacity 0.4s linear;
+  transition: opacity 0.4s linear;
 }
 
 @media screen and (min-width: 768px) {
@@ -439,7 +443,7 @@ p {
   height: 0;
   right: 0;
   top: 0;
-  background-color: black;
+  background-color: rgba(55, 55, 55, 0.904);
   z-index: -1;
   -webkit-transition: 0.2s ease-in;
   transition: 0.2s ease-in;
@@ -661,7 +665,7 @@ p {
   height: 100%;
   left: 0;
   top: 0;
-  background-color: black;
+  background-color: rgba(55, 55, 55, 0.904);
   z-index: -1;
   -webkit-transition: 0.2s ease-in;
   transition: 0.2s ease-in;
@@ -950,6 +954,7 @@ p {
   border: 2px solid #6195FF;
   border-radius: 5px;
   font-size: 16px;
+  cursor: pointer;
 }
 
 .team .team__wrapper {
@@ -1132,6 +1137,7 @@ p {
   border: none;
   border-radius: 5px;
   margin-top: 20px;
+  cursor: pointer;
 }
 
 .footer {
@@ -1183,14 +1189,15 @@ p {
 
 .footer .footer__wrapper .footer__social a {
   text-decoration: none;
+  margin: 0 10px;
 }
 
 .footer .footer__wrapper .footer__social a .fab {
   color: white;
   background-color: #6195FF;
-  font-size: 30px;
-  width: 50px;
-  height: 50px;
+  font-size: 20px;
+  width: 35px;
+  height: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1204,7 +1211,7 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 20px 20px;
+  margin: 20px 10px;
 }
 
 .footer .footer__wrapper .footer__copyright {
@@ -1230,6 +1237,7 @@ p {
   font-size: 25px;
   font-weight: bold;
   display: none;
+  cursor: pointer;
 }
 
 .back__to__top--active {

@@ -120,6 +120,7 @@ section {
                 margin: 5px 15px;
                 @include flex-center;
                 cursor: pointer;
+                padding: 5px 15px;
 
                 @include breakpoint(small) {
                     display: none;
@@ -283,6 +284,8 @@ section {
                     border: none;
                     border-radius: 5px;
                     background-color: white;
+                    cursor: pointer;
+                    transition: opacity 0.4s linear;
 
                     @include breakpoint(small) {
                         width: 160px;

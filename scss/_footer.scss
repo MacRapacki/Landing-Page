@@ -22,15 +22,16 @@
 
             a {
                 text-decoration: none;
+                margin: 0 10px;
 
                 .fab {
                     color: white;
                     background-color: $blue-color;
-                    font-size: 30px;
-                    width: 50px;
-                    height: 50px;
+                    font-size: 20px;
+                    width: 35px;
+                    height: 35px;
                     @include flex-center;
-                    margin: 20px 20px;
+                    margin: 20px 10px;
                 }
             }
         }
