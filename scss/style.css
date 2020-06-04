@@ -150,6 +150,8 @@ p {
           align-items: center;
   cursor: pointer;
   padding: 5px 15px;
+  border: none;
+  background-color: transparent;
 }
 
 @media screen and (min-width: 768px) {

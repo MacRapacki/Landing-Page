@@ -121,6 +121,8 @@ section {
                 @include flex-center;
                 cursor: pointer;
                 padding: 5px 15px;
+                border: none;
+                background-color: transparent;
 
                 @include breakpoint(small) {
                     display: none;
