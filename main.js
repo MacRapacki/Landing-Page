@@ -23,6 +23,29 @@ burger.addEventListener('click', () => {
 })
 
 
+const hideNavList = () => {
+    links.forEach((link) => {
+        link.addEventListener('click', () => {
+            //hide navLIst
+            navbar.classList.remove("navbar__list--active");
+
+            //reset animate links
+            links.forEach((link) => {
+                link.classList.toggle("navbar__link--active")
+            });
+
+            //animate burger
+            bars.forEach((bar) => {
+                bar.classList.toggle("bar--active")
+            })
+        })
+    });
+
+}
+
+hideNavList()
+
+
 // CONTACT SECTION //  
 
 const submitFormBtn = document.querySelector(".contact__btn")
