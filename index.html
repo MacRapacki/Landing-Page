@@ -335,9 +335,12 @@
                     <p class="contact__detail">1945 Main Road</p>
                 </div>
                 <form class="contact__form">
-                    <input type="text" class="input contact__name" placeholder="Name" maxlength="40">
-                    <input type="email" class="input conatct__email" placeholder="Email" maxlength="40">
-                    <input type="text" class="input contact__subject" placeholder="Subject" maxlength="50">
+                    <label for="name"></label>
+                    <input type="text" class="input contact__name" placeholder="Name" maxlength="40" id="name">
+                    <label for="email"></label>
+                    <input type="email" class="input conatct__email" placeholder="Email" maxlength="40" id="email">
+                    <label for="subject"></label>
+                    <input type="text" class="input contact__subject" placeholder="Subject" maxlength="50" id="subject">
                     <textarea class="input contact__message" placeholder="Message" name="" cols="30"
                         rows="10"></textarea>
                     <button class="contact__btn">Send message</button>
