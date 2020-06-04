@@ -959,6 +959,11 @@ p {
   cursor: pointer;
 }
 
+.prices .prices__wrapper .prices__box .prices__box__btn:focus-within {
+  background-color: black;
+  color: white;
+}
+
 .team .team__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;

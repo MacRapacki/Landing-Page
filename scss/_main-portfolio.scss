@@ -20,6 +20,7 @@
             height: 330px;
             overflow: hidden;
 
+
             @include breakpoint (large) {
                 margin: 50px 50px;
             }
@@ -40,6 +41,7 @@
                 background: rgba(55, 55, 55, 0.904);
                 opacity: 0;
                 transition: 0.3s linear;
+
 
                 &:hover {
                     opacity: 1;
@@ -73,6 +75,11 @@
                         flex-direction: row;
                         justify-content: center;
                         align-items: center;
+
+                        // &:focus-within {
+                        //     border: 3px solid black;
+                        //     opacity: 1;
+                        // }
 
                         i {
                             color: white;
